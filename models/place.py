@@ -1,4 +1,6 @@
 from models.base_model import BaseModel
+
+
 class Place(BaseModel):
     city_id = ""    # string (city.id)
     user_id = ""    # string (user.id)
