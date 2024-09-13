@@ -24,37 +24,37 @@ class TestUser(unittest.TestCase):
     def test_attribute_assignment(self):
         # tests if attributes as required
         user = User()
-        user.email = "johndoe@alx.com"
+        user.email = "uwera@gmail.com"
         user.password = "password"
-        user.first_name = "John"
-        user.last_name = "Doe"
-        self.assertEqual(user.email, "johndoe@alx.com")
+        user.first_name = "Marie"
+        user.last_name = "Uwera"
+        self.assertEqual(user.email, "uwera@gmail.com")
         self.assertEqual(user.password, "password")
-        self.assertEqual(user.first_name, "John")
-        self.assertEqual(user.last_name, "Doe")
+        self.assertEqual(user.first_name, "Marie")
+        self.assertEqual(user.last_name, "Uwera")
 
     def test_to_dict(self):
         # tests the to_dict method specified in BaseModel
         user = User()
-        user.email = "johndoe@alx.com"
+        user.email = "uwera@gmail.com"
         user.password = "password"
-        user.first_name = "John"
-        user.last_name = "Doe"
+        user.first_name = "Marie"
+        user.last_name = "Uwera"
         user_dict = user.to_dict()
-        self.assertEqual(user_dict["email"], "johndoe@alx.com")
+        self.assertEqual(user_dict["email"], "uwera@gmail.com")
         self.assertEqual(user_dict["password"], "password")
-        self.assertEqual(user_dict["first_name"], "John")
-        self.assertEqual(user_dict["last_name"], "Doe")
+        self.assertEqual(user_dict["first_name"], "Marie")
+        self.assertEqual(user_dict["last_name"], "Uwera")
         self.assertEqual(user_dict["__class__"], "User")
 
     def setUp(self):
         # test the __str__ method specified in BaseModel
         self.user = User()
-        self.user.id = "1995"
-        self.user.email = "johndoe@alx.com"
+        self.user.id = "2000"
+        self.user.email = "uwera@gmail.com"
         self.user.password = "password"
-        self.user.first_name = "John"
-        self.user.last_name = "Doe"
+        self.user.first_name = "Marie"
+        self.user.last_name = "Uwera"
 
     def test_save_method_updates_updated_at(self):
         # Get the initial updated_at value
