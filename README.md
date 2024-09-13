@@ -15,3 +15,16 @@ Below is a high-level, Python console application using object-oriented programm
 1. Clone this repository
  bash
  git clone https://github.com/Carine-69/alu-AirBnB_clone.git
+
+2. create User
+   create User
+   
+4. Show a User by ID
+   show User <id>
+   
+5. Update a User's Email:
+   update User <id> email "newemail@example.com"
+   
+7. Destroy a User by ID
+   destroy User <id>
+   
