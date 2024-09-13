@@ -6,7 +6,7 @@ serve as the entry point of the entire project
 
 from cmd import Cmd
 from models import storage
-from models.engine.errors import *
+from models.engine.erros  import *
 import shlex
 from models.base_model import BaseModel
 from models.user import User
