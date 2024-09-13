@@ -18,7 +18,7 @@ from models.review import Review
 
 
 # Global variable of registered models
-classes = storage.models
+classes = storage.class_dict
 
 
 class HBNBCommand(Cmd):
