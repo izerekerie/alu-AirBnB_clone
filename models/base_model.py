@@ -2,7 +2,7 @@
 # module that Defines the BaseModel Class
 from uuid import uuid4
 from datetime import datetime
-
+import models
 """Parent class for all other classes in AirBnB Project"""
 
 
@@ -37,7 +37,7 @@ class BaseModel():
             self.id = str(uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
-
+            models.storage.new(self)
     def __str__(self):
         """Method to set the string representation of BaseModel object.
         Return the class name, id and the dictionary
@@ -55,7 +55,7 @@ class BaseModel():
         -
         """
         self.updated_at = datetime.now()
-        #models.storage.save()
+        models.storage.save()
 
     def to_dict(self):
         """
