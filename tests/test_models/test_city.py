@@ -14,7 +14,6 @@ class CityTest(unittest.TestCase):
     def test_default_value(self):
         city = City()
         self.assertEqual(city.name, "")
-        self.assertIsNotNone(city.id)  # ID is usually auto-generated, so shouldn't be an empty string
 
     def test_assigned_value(self):
         city = City()

@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import unittest
 from models.place import Place
 
@@ -48,6 +49,17 @@ class TestPlace(unittest.TestCase):
         place.number_bathrooms = 1  # Consistent name
         place.amenity_ids = ["2", "4", "54"]
         place.price_by_night = 4500
+        self.assertEqual(place.user_id, "123")
+        self.assertEqual(place.name, "Mane")
+        self.assertEqual(place.description, "parallel to name")
+        self.assertEqual(place.latitude, 1.00)
+        self.assertEqual(place.longitude, 0.01)
+        self.assertEqual(place.city_id, "321")
+        self.assertEqual(place.max_guest, 3)
+        self.assertEqual(place.number_rooms, 2)
+        self.assertEqual(place.number_bathrooms, 1)
+        self.assertEqual(place.amenity_ids, ["2", "4", "54"])
+        self.assertEqual(place.price_by_night, 4500)
 
 
 if __name__ == '__main__':
