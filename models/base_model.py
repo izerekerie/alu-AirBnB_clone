@@ -69,3 +69,4 @@ class BaseModel():
         result["updated_at"] = self.updated_at.isoformat()
         result["__class__"] = self.__class__.__name__
         return result
+    
